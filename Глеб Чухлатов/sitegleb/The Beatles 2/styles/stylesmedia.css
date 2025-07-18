@@ -1,0 +1,127 @@
+		
+	@media screen and (max-width: 400px) {
+	
+		* {text-decoration:	none;}
+
+		body {background: transparent;}
+		
+		header h1, nav, main, footer {margin-left: 8pt;}
+		
+		header h1 {
+			font-size: 28pt;
+			background: purple;
+		}
+		
+		nav {flex-direction: column;}
+		
+		main {
+			padding-left: 0pt;
+			border-left: none;
+		}
+
+		h4 {color: purple}
+
+		div#discography > div {
+			background-color: pink;
+			border: 2px solid purple;
+			padding: 5px;
+			margin: 5px;
+			text-align: center;
+			width: 120px;
+			transform: rotate(5deg);
+			transition-duration: 0.2s;
+			color: purple;
+		}
+
+		div#discography > div:hover {
+			background-color: pink;
+			padding: 5px;
+			margin: 5px;
+			text-align: center;
+			width: 120px;
+			transform: rotate(-5deg);
+			transition-duration: 0.1s;
+			transform: translateY(-5px);
+		}
+
+		div#discography {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		iframe.fotoframe {
+			width: 200pt;
+			height: 200pt;
+		}
+
+				/*Гамбургер*/
+
+		div.hamburger {
+			left: 20px;
+			top: 20px;
+			width: 40px;
+			height: 40px;
+			position: absolute; background: url(../media/list.svg) center/contain no-repeat; border: 1px solid grey;
+		}
+		
+		div.hamburger > label {
+			display: block;
+			width: 38px;
+			height: 38px;
+			padding: 0px;
+			cursor: pointer;
+		}
+		
+		div.hamburger > nav {
+			display: none;
+			background-color: white;
+			border: 1px solid grey;
+			position: relative;
+			left: -1px;
+			top: 2px;
+		}
+
+		div.hamburger > nav > a {
+			display: block;
+			margin: 5px;
+		}
+
+		div.hamburger > input:checked ~ nav {
+			display: inline-block;
+		}
+
+		iframe {width: 560px;}
+
+	}
+
+	@media screen and (min-width: 400px) {
+		
+		div.hamburger > input {display: none; }
+
+	}
+
+
+
+	@media print {
+		body {background: transparent;}
+		
+		nav {display: none;}
+		
+		header h1, main, footer {margin-left: 8pt;}
+		
+		header, footer {background: transparent;}
+		
+		main {
+			padding-left: 0pt;
+			border-left: none;
+		}
+		
+		p {color: black;}
+		
+		header h1, footer p {color: black}
+		
+		header h1 {letter-spacing: 10pt}
+		
+		footer {border-top: 1px solid black;}
+	}

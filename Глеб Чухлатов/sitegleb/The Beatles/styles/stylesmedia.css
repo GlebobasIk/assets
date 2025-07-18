@@ -1,0 +1,84 @@
+		
+	@media screen and (max-width: 400px) {
+	
+		* {text-decoration:	none;}
+
+		body {background: transparent;}
+		
+		header h1, nav, main, footer {margin-left: 8pt;}
+		
+		header h1 {
+			font-size: 28pt;
+			background: purple;
+		}
+		
+		nav {flex-direction: column;}
+		
+		main {
+			padding-left: 0pt;
+			border-left: none;
+		}
+
+		h4 {color: purple}
+
+		div#discography > div {
+			background-color: pink;
+			border: 2px solid purple;
+			padding: 5px;
+			margin: 5px;
+			text-align: center;
+			width: 120px;
+			transform: rotate(5deg);
+			transition-duration: 0.2s;
+			color: purple;
+		}
+
+		div#discography > div:hover {
+			background-color: pink;
+			padding: 5px;
+			margin: 5px;
+			text-align: center;
+			width: 120px;
+			transform: rotate(-5deg);
+			transition-duration: 0.1s;
+			transform: translateY(-5px);
+		}
+
+		div#discography {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		iframe.fotoframe {
+			width: 200pt;
+			height: 200pt;
+		}
+
+
+	iframe {width: 560px;}
+
+	}
+
+	@media print {
+		body {background: transparent;}
+		
+		nav {display: none;}
+		
+		header h1, main, footer {margin-left: 8pt;}
+		
+		header, footer {background: transparent;}
+		
+		main {
+			padding-left: 0pt;
+			border-left: none;
+		}
+		
+		p {color: black;}
+		
+		header h1, footer p {color: black}
+		
+		header h1 {letter-spacing: 10pt}
+		
+		footer {border-top: 1px solid black;}
+	}

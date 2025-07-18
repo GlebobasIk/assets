@@ -1,0 +1,170 @@
+	
+	.gallery-item img {width: 100%;}
+	.nonscroll {overflow: hidden;}
+	main p{font: 12pt Comic Sans MS, sans-serif;}
+	a[target=gallery] {font-size: 16pt;}
+
+	header h1 {
+		font: bold 42pt Verdana, sans-serif; color: white;
+		text-align: right;
+		background-color: purple;
+		margin-top: 8pt; 
+		margin-right: 8pt; 
+		margin-left: 80pt;
+		padding-right: 12pt;
+		box-shadow: 4px 3px 9px black;
+		transform: skew(-5deg);
+	}
+	* ::selection{
+		color:DeepPink;
+	}
+
+
+	footer {
+		margin-left: 80pt;
+		margin-right: 8pt;
+		height: 100%;
+		text-align: left;
+		border-top: 1px solid purple;
+	}
+
+	main{
+		margin-left: 80pt;
+		padding-left: 20pt;
+		padding-right: 10pt;
+		border-left-width: 20pt;
+		border-left-style: solid;
+		border-left-color: purple;
+		border-bottom-left-radius: 10pt;
+	}
+
+	body{
+		margin:0px;
+		counter-reset:ch1;
+		background-size:60pt, cover;
+		background-attachment:fixed;
+		background-position: 10pt 8pt, 0pt 0pt;
+		background-repeat: no-repeat;
+	}
+		
+	div.tb1 {display: table;}
+	div.tb1 > div {display: table-row;}
+	vertical-align: middle;
+	}
+	 
+	a{
+		display: block;
+		font-family:Comic Sans MS;
+		text-decoration:none;
+		color:purple;
+	}
+
+	*{
+		font-family:Comic Sans MS;
+		color: purple;
+	}
+		
+	aside {
+		float: right;
+		margin: 20px 0px 20px 20px;
+		padding: 5px;
+		color: white;
+		background-color: black;
+		text-align: center;
+	}
+
+	nav a {
+		display: block;
+	}
+
+	nav a:link, nav a:visited { 
+		color: pulple; 
+		background-color: pink; 
+		text-decoration: none;
+		transition-duration: 1s;
+	}
+
+	nav a:active, nav a:hover { 
+		color: purple; 
+		text-decoration: fnone;
+	}
+
+
+
+	nav {
+		margin: 10px 10px 10px 80pt;
+		padding: 5px;
+		border: 4px solid purple;
+		font: 16pt Arial, sans-serif;
+		background-color:pink;
+		box-shadow: 4px 3px 9px black;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	div#discography > div {
+		background-color: purple;
+		padding: 5px;
+		margin: 5px;
+		text-align: center;
+		width: 120px;
+		transform: rotate(5deg);
+		transition-duration: 0.2s;
+		color: white;
+	}
+
+	div#discography > div:hover {
+		background-color: purple;
+		padding: 5px;
+		margin: 5px;
+		text-align: center;
+		width: 120px;
+		transform: rotate(-5deg);
+		transition-duration: 0.1s;
+		transform: translateY(-5px);
+	}
+
+	div#discography {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	h4 {
+		color:white;	
+	}
+
+	.main {color: white}
+
+	li:hover {
+		color: black;
+		transform: translateX(5px);
+		transition-duration: 1.5s;
+	}
+
+	li {
+		transform: translateX(-5px);
+		transition-duration: 1.5s;
+	}
+
+	/*Спойлер*/
+
+	.spoiler {border: 1px solid purple;}
+	.spoiler > input {display: none;}
+	.spoiler > label {
+		display: block;
+		color: white;
+		background-color: gray;
+		margin: 1px;
+		padding: 3px;
+		cursor: pointer;
+	}
+
+	.spoiler > div {
+		display: none;
+		padding: 3px;
+	}
+
+	.spoiler > label > span {font-family: monospace;}
+	.spoiler > input:checked ~ div {display: block;}
+	.spoiler > input:checked ~ labek > span:before {content: "[-]";} 

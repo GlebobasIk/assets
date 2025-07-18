@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Заказ еды на вынос</title>
+		<link href="../styles/2.1.css"
+		rel="stylesheet" type="text/css">
+	</head>
+<body>
+	<header>
+		<div class="pos1"><img src="../images/logotip.png"></div>
+		<div class="pos2"><h1>Йoкoгaмa</h1></div>
+		<div class="pos3"><h1>Cуши-бap</h1></div>
+	</header>
+	<main>
+		<h2>Заказ еды ны вынос</h2>
+		<div class= "qwerty">
+			<form action="mailto:chukhlatov.gleb@mail.ru" method="post" enctype= "text/plain">
+			<fieldset>
+				<legend>Имя и фамилия</legend>
+				<p>Имя<Br><input type="text" name="namel"></p>
+				<p>Фамилия<Br><input type="text" name="name2"></p>
+			</fieldset> 
+			<p><label for="dishes">Чтo желаете заказать?</label><br><select name="dishes" id="dishes" size="7"multiple>
+			<optgroup label="Сашими">
+				<option value="unagi">Унaги</option>
+				<option value="hamachi">Хaмaчи</option>
+			</optgroup>
+			<optgroup label="Суши">
+				<option value="chukka">Чyккa</option>
+				<option value="maguro">Maгypo</option>
+				<option value="tobiko">Toбикo</option>
+			</optgroup>
+			<optgroup label="Роллы">
+				<option value="batkon">Кунсэй баткон</option>
+				<option value="arigato">Аригато</option>
+			</select></p>
+			<p><label for="phone">Ваш номер телефона?</label></br><input placeholder="+1 234 567 8901" type="number" name="phone" id="phone" required></p>
+			<p>Введите текст сообщения<br><textarea cols="40" rows="B" wrap="hard">Здpaвcтвyйтe!</textarea></p>
+			<p>Выберите файл<br><input type="file" accept=".jpg, .png, .svg"></p>
+			<p>Уровень удовлетворенности (от 1 до 10)<br>
+			<input type="range" min="1" max="10" value="8"></p> 
+			<button type="submit"><strong>Отправить данные</strong><br><img src="../images/send.svg" width="30"></button>
+			<button type="reset" value="Сбросить"><strong>Отчистить</strong></button>
+		</div>
+	</main>
+	<footer>
+	<div class="pos4">
+	<table width="100%">
+		<tr>
+			<td class="td1" width="33%">
+				<div class="zakaz"><a href="pages/order.html">Заказать столик</a></div>
+			</td>
+			<td class="td2" width="33%">
+				<div><a href="../index.html" class="af">Глaвнaя</a></div>
+				<div><a href="sashimi.html" class="af">Caшими</a></div>
+				<div><a href="sushi.html" class="af">Cyши</a></div>
+				<div><a href="rolls.html" class="af">Роллы</a></div>
+				<div><a href="pricelist.html" class="af">Прайс-лист</a></div>
+			</td>
+			<td class="td3" width="33%">
+				
+			</td>
+		</tr>
+	</table>
+	</div>
+	</footer>
+</body>
+</html> 

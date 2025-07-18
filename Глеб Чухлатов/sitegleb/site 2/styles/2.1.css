@@ -1,0 +1,339 @@
+
+
+	@font-face {
+		font-family: "Gleb";
+		src:url(../fonts/Gleb.ttf);
+	}
+
+	@font-face {
+		font-family: "Gleb";
+		src:url(../fonts/Gleb_Bold.ttf);
+		font-weight: bold;
+	}
+
+	@font-face {
+		font-family: "Gleb";
+		src:url(../fonts/Gleb_Bold_Italic.ttf);
+		font-weight: italic;
+	}
+
+	@font-face {
+		font-family: "Gleb";
+		src:url(../fonts/Gleb_Italic.ttf);
+		font-weight: italic;
+		font-weight: bold;
+	}
+
+	ol {
+		list-style-type: upper-roman;
+	}
+
+	body {
+		font-family: Comic Sans MS;}
+
+	main{
+		text-align: justify;
+		padding-right: 10px;
+		padding-left: 10px;s
+	}
+
+	.greeting {
+		font-size: 24pt;
+	}
+
+	.bigger {
+		font-size:16pt;
+	}
+
+	a:hover {
+		color:DeepPink;
+		text-decoration:none;
+	}
+
+	a {text-decoration: none}
+
+	p {
+		font-size: 14pt !important; 
+		font-family: Comic Sans MS;
+	}
+
+	address {
+		font-family: Times New Roman;
+		font-size: 15;
+	}
+
+	.advertising {
+		margin-left:30pt;
+		font-size:15pt;
+		margin-top:5pt;
+		margin-bottom:5pt;
+	}
+
+	.catalog td{
+		border-top: black thin solid;
+		border-bottom: black thin solid;
+		padding: 10px;
+	}
+
+	.pricelist th, .pricelist td {
+	border: grey thin solid;
+	padding: 4рх; 
+	}
+
+	.pricelist thead th {
+		color: white;
+		background-color: purple;
+	}
+
+	.pricelist tfoot {
+		text-align: right;
+	}
+
+	.catalog td img{
+		border: grey thin solid;
+		padding: 4рх; 
+		width: 100%;
+	}
+
+	.catalog p{
+		font-size:14pt;
+		text-align:justify;
+	}
+
+	nav {
+		width: 260px;
+		padding: 10px;
+		background-color: rgba(255, 255, 255, 0.7);
+	}
+
+	nav div, nav a {
+		font-size: 20pt;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	nav a{
+		display:block;
+	}
+
+	footer{
+		position: relative;
+		text-align: right; 
+		background-color:white;
+		text-decoration: none;
+		width: 100%;
+	}
+
+	table.ft {
+		width: 100;
+	}
+
+	table td{
+		text-align:left;
+	}
+
+	a.af{
+		color:black;
+	}
+
+	table td.ps{
+		float:right;
+	}
+
+	div.qwerty{
+		border: black medium double;
+		border-radius: 10px;
+		width: 380px;
+		padding: 5px;
+	}
+
+	optgroup, option{
+		font-family: Comic Sans MS;
+	}
+
+	header{
+		background-color: white; 
+		height: 80pt; 
+		margin-bottom: 80pt;
+	}
+
+	table.catalog tr:first-child td {
+		border-top: none;
+		width: 50%;
+	}
+
+	table.catalog tr:last-child td {
+		border-bottom: none;
+	}
+
+	table.catalog td p:first-of-type::first-letter::{
+		font-size: 20pt;
+	}
+
+	* ::selection{
+		color:DeepPink;
+		text-decoration: none !important;
+	}
+
+	table.pricelist tbody th {
+		text-align:center
+	}
+
+	table.pricelist td:last-child:not(:only-child) {
+		border:none;
+		background-color:Pink;
+	} 
+
+	table.catalog h3 {
+		font-family: "Gleb";
+		font-size: 20pt;
+	}
+
+	address {
+		font-family: Comic Sans MS;
+	}
+
+	ul li {
+		text-transform:capitalize;
+	}
+
+	table.catalog{
+		min-width: 12cm;
+		width: 70%;
+		border-collapse: collapse;
+	}
+
+	table.pricelist{
+		border: black medium double;
+		box-shadow: 4px 4px 1px 1px purple;
+		margin-bottom: 20px;
+	}
+
+	table.pricelist th:only-child{
+		background-color:rgb(230,168,215);
+	}
+
+	nav a:link, nav a:visited {
+		color:MediumVioletRed;
+		text-decoration: none;
+	}
+
+	nav a:active, nav a:hover {
+		color: deeppink;
+		text-decoration: none;
+	}
+
+	input:focus {background-color: yellow;}
+	input:valid {border-color: green;}
+	input:invalid {border-color: red; background-color: red;}
+
+	.pos1, .pos2, .pos3 .pos4 {
+		position: absolute;
+	}
+
+	.pos1 {
+		left: 0pt; 
+		top: 0pt; 
+		width: 140pt; 
+	}
+
+	.pos1 img {
+		height: 80pt;
+	}
+
+	.pos2 {
+		left: 140pt; 
+		top: 29pt; 
+		right: 0pt; 
+	}
+	.pos2 h1 {
+		font: bold italic 42pt Verdana; 
+		text-transform: uppercase; 
+		text-align: right; 
+		letter-spacing: 10pt; 
+		margin: 0px; 
+		background-color: purple;
+		color: white;
+	 	margin-left: 40pt;
+	}
+
+	.pos3 {
+		left: 40pt; 
+		top: 4pt; 
+		right: 70pt; 
+		color: purple;
+	}
+
+	.pos3 h1 {
+		font: bold 24pt Verdana; 
+		text-transform: uppercase; 
+		text-align: right; 
+		letter-spacing: 6pt; 
+		margin: 0px;
+	}
+
+	.pos4 {
+		top: 0pt;
+		right: 20pt;
+		text-decoration:none;
+	}
+
+	.yellow {
+		display: flex;
+		float: left;
+		background-color: purple;
+	}
+
+	.td2 {
+		text-align: center;
+		text-decoration: none;
+	}
+
+	.td1 {
+		position: absolute;
+		width: 130pt;
+		height: 60pt;
+		background-color: yellow;
+		top: 20pt;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	div#tablecont {
+		display: table;
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+	div#tablecont > div {display: table-row;}
+
+	div#tablecont > div > * {
+		display: table-cell;
+		vertical-align: top;
+	}
+
+	/*Аккордион*/
+
+	.accordion {border: 1px solid purple;}
+	.accordion > input {display: none;}
+	.accordion > label {
+		display: block;
+		color: white;
+		background-color: purple;
+		margin: 1px;
+		padding: 3px;
+		cursor: pointer;
+	}
+
+	.accordion > nav {
+		display: none;
+		padding: 3px;
+	}
+
+	.accordion > nav > a {
+		display: block;
+		margin: 5px;
+	}
+
+	.accordion > input:checked ~ nav {display: block;}

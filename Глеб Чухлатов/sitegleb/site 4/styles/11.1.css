@@ -1,0 +1,47 @@
+	
+	body {
+		font-family:Comic Sans MS;
+		background-color:pink}
+	
+	main {
+		margin-left: 80pt;
+		padding-left: 20pt;
+		padding-right: 10pt;
+		border-right-width: 20pt;
+		border-right-style: solid;
+		border-right-color: purple;
+		margin-left:33%;
+		margin-top:15%;
+		margin-right:33%;
+		background-color:white;
+		width:300pt;
+		border-bottom-right-radius: 5pt;
+		border-bottom-left-radius: 5pt;
+		border-top-right-radius: 5pt;
+		border-top-left-radius: 5pt;}
+	
+	h3 {
+		font-size:22pt;
+		color:purple;
+		padding:10px}
+	
+	form {
+		margin-left:5pt;
+		margin-top:5pt;
+		margin-right:5pt;}
+	
+	input[type=name]{width:250pt}
+	input[type=password]{width:250pt}
+	
+	button {
+		width:257pt;
+		margin-bottom:10pt;
+		background-color:purple;
+		border-bottom-right-radius: 4pt;
+		border-bottom-left-radius: 4pt;
+		border-top-right-radius: 4pt;
+		border-top-left-radius: 4pt;
+		font-family:Comic Sans MS}
+	
+	a {
+		margin-left:23%}

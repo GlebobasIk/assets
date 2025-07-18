@@ -1,0 +1,411 @@
+	@font-face {
+		font-family: "Gleb";
+		src:url(../fonts/Gleb.ttf);
+	}
+
+	@font-face {
+		font-family: "Gleb";
+		src:url(../fonts/Gleb_Bold.ttf);
+		font-weight: bold;
+	}
+
+	@font-face {
+		font-family: "Gleb";
+		src:url(../fonts/Gleb_Bold_Italic.ttf);
+		font-weight: italic;
+	}
+
+	@font-face {
+		font-family: "Gleb";
+		src:url(../fonts/Gleb_Italic.ttf);
+		font-weight: italic;
+		font-weight: bold;
+	}
+
+	@keyframes navlinks {
+		100% {color: yellow}
+	}
+
+
+	@keyframes zakazlinks {
+		0% {
+			background-color: white;
+			transform: translateX(-150px) scale(0.2, 0.2);
+		} 
+		100% { 
+			background-color: yellow;
+			transform: scale(1, 1) translateX(0px); 
+		}
+	}
+
+
+	.zakaz {
+	    animation-name: zakazlinks;
+	    animation-duration: 1.5s;
+	    animation-delay: 2s;
+	    margin-left: 10pt;
+	    width: 130pt;
+	    height: 60pt;
+	    background-color: yellow;
+	    top: 20pt;
+	    left: 40pt;
+	    display: flex; 
+	    justify-content: center; 
+	    align-items: center; 
+	}
+
+	ol {
+		list-style-type: upper-roman;
+	}
+
+	body {
+		font-family: Comic Sans MS;
+		margin: 0px;
+	}
+
+	main{
+		text-align: justify;
+		left: 190pt;
+		top: 100pt;
+		right: 0pt;
+		bottom: 120pt;
+		overflow: auto;
+		padding-left: 50px;
+		padding-right: 10px;
+	}
+
+	.greeting {
+		font-size: 24pt;
+	}
+
+	.bigger {
+		font-size:16pt;
+	}
+
+	a:hover {
+		color:DeepPink;
+		text-decoration:none;
+	}
+
+	a {text-decoration: none;
+	color:blue;}
+
+	p {
+		font-size: 14pt !important; 
+		font-family: Comic Sans MS;
+	}
+
+	address {
+		font-family: Times New Roman;
+		font-size: 15;
+	}
+
+	.advertising {
+		margin-left:30pt;
+		font-size:15pt;
+		margin-top:5pt;
+		margin-bottom:5pt;
+	}
+
+	.catalog td{
+		border-top: black thin solid;
+		border-bottom: black thin solid;
+		padding: 10px;
+	}
+
+	.pricelist th, .pricelist td {
+	border: grey thin solid;
+	padding: 4рх; 
+	}
+
+	.pricelist thead th {
+		color: white;
+		background-color: purple;
+	}
+
+	.pricelist tfoot {
+		text-align: right;
+	}
+
+	.catalog td img{
+		border: purple thin solid;
+		padding: 4рх; 
+		width: 100%;
+	}
+
+	.catalog p{
+		font-size:14pt;
+		text-align:justify;
+	}
+
+	nav {
+		width: 260px;
+		padding: 10px;
+		left: 0pt;
+		top: 100pt;
+		bottom: 120pt;
+		background-color: rgb(180, 0, 180)
+	}
+
+	nav div, nav a {
+		font-size: 20pt;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	nav a{
+		display:block;
+	}
+
+	footer{
+		text-align: right; 
+		background-color:white;
+		text-decoration: none;
+		width: 100%;
+		left: 0pt;
+		right: 0pt;
+		bottom: 0pt;
+	}
+
+	table.ft {
+		width: 100;
+	}
+
+	table td{
+		text-align:left;
+	}
+
+	a.af{
+		color:black;
+	}
+
+	table td.ps{
+		float:right;
+	}
+
+	div.qwerty{
+		border: black medium double;
+		border-radius: 10px;
+		width: 380px;
+		padding: 5px;
+	}
+
+	optgroup, option{
+		font-family: Comic Sans MS;
+	}
+
+	header{
+		background-color: white; 
+		height: 80pt; 
+		margin-bottom: 80pt;
+		left: 0pt;
+		top: 0pt;
+		right: 0pt;
+	}
+
+	table.catalog tr:first-child td {
+		border-top: none;
+		width: 50%;
+	}
+
+	table.catalog tr:last-child td {
+		border-bottom: none;
+	}
+
+	table.catalog td p:first-of-type::first-letter::{
+		font-size: 20pt;
+	}
+
+	* ::selection{
+		color:DeepPink;
+		text-decoration: none !important;
+	}
+
+	table.pricelist tbody th {
+		text-align:center
+	}
+
+	table.pricelist td:last-child:not(:only-child) {
+		border:none;
+		background-color:Pink;
+	} 
+
+	table.catalog h3 {
+		font-family: "Gleb";
+		font-size: 20pt;
+	}
+
+	address {
+		font-family: Comic Sans MS;
+	}
+
+	ul li {
+		text-transform:capitalize;
+	}
+
+	table.catalog{
+		min-width: 12cm;
+		width: 70%;
+		border-collapse: collapse;
+	}
+
+	table.pricelist{
+		border: black medium double;
+		box-shadow: 4px 4px 1px 1px purple;
+		margin-bottom: 20px;
+	}
+
+	table.pricelist th:only-child{
+		background-color:rgb(230,168,215);
+	}
+
+	nav a:link, nav a:visited { 
+		color: white; 
+		text-decoration: none;
+		transition-duration: 0.5s; 
+	}
+
+	nav a:active, nav a:hover {
+		text-decoration: none; 
+		animation-name: navlinks; 
+		animation-duration: 0.5s;
+		transform: translateX(20px);
+		animation-fill-mode: forwards;
+	}
+
+	input:focus {background-color: yellow;}
+	input:valid {border-color: green;}
+	input:invalid {border-color: red; background-color: red;}
+
+	.pos1, .pos2, .pos3 .pos4 {
+		position: absolute;
+	}
+
+	.pos1 {
+		left: 0pt; 
+		top: 0pt; 
+		width: 140pt; 
+	}
+
+	.pos1 img {
+		height: 80pt;
+	}
+
+	.pos2 {
+		left: 140pt; 
+		top: 29pt; 
+		right: 0pt; 
+	}
+	.pos2 h1 {
+		font: bold italic 42pt Verdana; 
+		text-transform: uppercase; 
+		text-align: right; 
+		letter-spacing: 10pt; 
+		margin: 0px; 
+		background-color: purple;
+		color: white;
+	 	margin-left: 40pt;
+	}
+
+	.pos3 {
+		left: 40pt; 
+		top: 4pt; 
+		right: 70pt; 
+		color: purple;
+	}
+
+	.pos3 h1 {
+		font: bold 24pt Verdana; 
+		text-transform: uppercase; 
+		text-align: right; 
+		letter-spacing: 6pt; 
+		margin: 0px;
+	}
+
+	.pos4 {
+		top: 0pt;
+		right: 20pt;
+		text-decoration:none;
+	}
+
+
+	.td2 {
+		text-align: center;
+		text-decoration: none;
+	}
+
+
+	header, nav, main, footer {position: fixed;}
+
+	.form {
+		display: flex;
+		float: right;
+		background-color: yellow;
+	}
+
+	.td3 {
+		position: absolute;
+		width: 180pt;
+		height: 60pt;
+		background-color: yellow;
+		top: 20pt;
+		right: 20pt;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.polar {
+		width: 182px;
+		height: 182px; border: 1px solid grey;
+		position: relative;
+	} 
+
+	.polar img {
+		display: block;
+		width: 100%;
+	}
+
+	.polar div {
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		right: 0px;
+		padding: 15px;
+		text-align: center; background-color: white;
+	}
+		
+	.gallery {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.polar {margin: 10px;}
+	.polar:nth-child(n+1){transform: rotate(-5deg); }
+	.polar:nth-child(2n+1){transform: rotate(10deg); }
+	.polar:nth-child(3n+1){transform: rotate(-15deg); }
+
+	/*Спойлер*/
+
+	.spoiler {border: 1px solid purple;}
+	.spoiler > input {display: none;}
+	.spoiler > label {
+		display: block;
+		color: white;
+		background-color: deeppink;
+		margin: 1px;
+		padding: 3px;
+		cursor: pointer;
+	}
+
+	.spoiler > div {
+		display: none;
+		padding: 3px;
+	}
+
+	.spoiler > label > span {font-family: monospace;}
+	.spoiler > label > span:before {content: "[+]";}
+	.spoiler > input:checked ~ div {display: block;}
+	.spoiler > input:checked ~ label > span:before {content: "[-]";} 
+
+
